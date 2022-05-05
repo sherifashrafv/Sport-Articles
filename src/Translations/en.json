@@ -1,0 +1,24 @@
+{
+  "title": "title ",
+
+  "languages": {
+    "title": "languages",
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "Home": "Home",
+  "routers": {
+    "onlineTraining": " Online Training",
+    "aboutUs": "About-Us",
+    "contactUs": "Contact-Us",
+    "injuries": "Rehabilitation and injuries",
+    "information": "Article details"
+  },
+  "inputs": {
+    "email": "Email",
+    "name": "Name",
+    "topic": "Topic",
+    "message": "Message",
+    "input": "Send Message"
+  }
+}

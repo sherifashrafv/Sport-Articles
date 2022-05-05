@@ -1,0 +1,22 @@
+{
+  "title": "هذا العنوان رائع ",
+  "languages": {
+    "arabic": "العربية",
+    "english": "الانجليزية"
+  },
+  "Home": "الرئيسية",
+  "routers": {
+    "onlineTraining": "تدريب عن بعد",
+    "aboutUs": "من نحن",
+    "contactUs": "تواصل - معنا",
+    "injuries": "التأهيل والاصابات",
+    "information": "تفاصيل المقالة"
+  },
+  "inputs": {
+    "email": "بريدك الالكتروني",
+    "name": "الاسم",
+    "topic": "الموضوع",
+    "message": "الرسالة",
+    "input": "ارسل رسالة"
+  }
+}

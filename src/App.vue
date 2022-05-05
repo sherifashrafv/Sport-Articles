@@ -1,30 +1,38 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div>
+    <component :is="layout"> </component>
+  </div>
 </template>
+<script>
+import { computed } from "vue";
+import { useRouter } from "vue-router";
+export default {
+  setup() {
+    const defaultLayout = "default";
+    const { currentRoute } = useRouter();
+    const layout = computed(
+      () => `${currentRoute.value.meta.layout || defaultLayout}-layout`
+    );
+    return {
+      layout,
+    };
+  },
+};
+</script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style>
+::-webkit-scrollbar {
+  display: block !important;
+  width: 5px !important;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffff1f;
+}
+::-webkit-scrollbar-thumb {
+  background: #574ad8;
 }
 </style>
